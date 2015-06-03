@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/*-------------------------------------------------------------------------
+	Init
+/*-----------------------------------------------------------------------*/
+* {
+	margin:0;
+	padding:0;
+}
+
+html {
+	overflow-y:scroll;
+	word-break:break-all;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+
+ol,ul {
+	list-style:none;
+}
+
+blockquote, q {
+	quotes:none;
+}
+
+:focus {
+	outline:0;
+}
+
+ins {
+	text-decoration:none;
+}
+
+del {
+	text-decoration:line-through;
+}
+
+table {
+	
+}
+
+img {
+	border:0;
+	vertical-align:bottom;
+}
+
+address {
+	font-style:normal;
+}
+
+/*-------------------------------------------------------------------------
+	Setup
+/*-----------------------------------------------------------------------*/
+body {
+	background:#fff;
+	color:#262c29;
+	font-size:14px;
+	font-family:"Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	line-height:1.8;
+	letter-spacing:.5px;
+	word-break:normal;
+}
+
+strong {
+	font-weight:bold;
+}
+
+em {
+	font-style:normal;
+}
+
+/*-------------------------------------------------------------------------
+	Anchor
+/*-----------------------------------------------------------------------*/
+a {
+	color:#262c29;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#262c29;
+	text-decoration:none;
+}
+
+/*-------------------------------------------------------------------------
+	Clearfix
+/*-----------------------------------------------------------------------*/
+div,header,footer,section,article,aside,nav,ul,dl,ol,li,address {
+	zoom:1;
+}
+	
+	div:after,
+	header:after,
+	footer:after,
+	section:after,
+	article:after,
+	aside:after,
+	nav:after,
+	ul:after,
+	dl:after,
+	ol:after,
+	li:after,
+	address:after {
+		content:"";
+		display: block;
+		clear:both;
+		visibility:hidden;
+	}

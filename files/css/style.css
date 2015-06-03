@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+@import "common/layout.css";
+
+/*-------------------------------------------------------------------------
+	Page
+/*-----------------------------------------------------------------------*/
+#slider {
+	position:relative;
+	max-width:600px;
+	margin:30px auto 0;
+}
+#slide {
+	overflow:hidden;
+}
+	#slide .inner {
+		width:9999px;
+		position:relative;
+		left:0;
+	}
+	#slide #target li {
+		float:left;
+		width:50px;
+		height:200px;
+		line-height:200px;
+		background-color:#099;
+		color:#FFF;
+		text-align:center;
+		margin-right:0px;
+	}
+	#slide #target li:nth-child(even) {
+		background-color:#FC6;
+	}
+	#slide #target li:last-child {
+		margin-right:0;
+	}
+
+#nav {
+	text-align:center;
+	margin-top:10px;
+	display:nones;
+}
+#nav li {
+	display:inline-block;
+	margin:0 5px;
+}
+#nav li.current {
+	color:#F66;
+}
+
+#pcnavi {
+	position:absolute;
+	top:80px;
+	left:0;
+	width:100%;
+}
+	#pcnavi li {
+		cursor:pointer;
+		width:30px;
+		display:nones;
+	}
+	#pcnavi li.active {
+		display:block;
+	}
+	#left {
+		float:left;
+		margin-left:-30px;
+	}
+	#right {
+		float:right;
+		text-align:right;
+		margin-right:-30px;
+	}
+	
+@media screen and (max-width:600px) {
+	#nav {
+		display:block;
+	}
+	#pcnavi {
+		display:none;
+	}
+}
