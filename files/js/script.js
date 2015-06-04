@@ -53,7 +53,6 @@
 		var maxWidth = (length - 1) * parent.width() * -1;
 		
 		pos     = (id == "right") ?  pos - pWidth :  pos + pWidth;
-		current = (id == "right") ?  pos - pWidth :  pos + pWidth;
 		
 		if(pos > 0 || pos < maxWidth || target.is(":animated")) return false;
 		
